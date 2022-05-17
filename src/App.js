@@ -1,7 +1,7 @@
 import QRCode from "./QRCode";
+// import QRCode2 from "./QRCode2";
+import QRCode2 from "./QRCode2";
 import "./App.css";
-
-let urlString = 'http://www.jordansamuelsmusic.com'
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <header className="App-header">
 
         {QRCode()}
+        {/* {QRCode2()} */}
 
       </header>
     </div>
