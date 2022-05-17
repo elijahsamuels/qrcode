@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import { saveAs } from "file-saver";
 // var FileSaver = require("file-saver");
 import Button from "react-bootstrap/Button";
@@ -19,18 +19,18 @@ const QRCodeComponent = () => {
   const [fileName, setFileName] = useState("New QR Code");
   const [size, setSize] = useState(100);
   const [checked, setChecked] = useState(true);
-  const [gradientChecked, setgradientChecked] = useState(false);
+  // const [gradientChecked, setgradientChecked] = useState(false);
   const [emailAddress, setEmailAddress] = useState("");
   const [emailSubject, setEmailSubject] = useState("");
   const [userStringBody, setUserStringBody] = useState("");
   const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
-  const [foregroundColor1, setForegroundColor1] = useState("#000000");
-  const [foregroundColor2, setForegroundColor2] = useState("#000000");
+  // const [foregroundColor1, setForegroundColor1] = useState("#000000");
+  // const [foregroundColor2, setForegroundColor2] = useState("#000000");
 
   const [radioValue, setRadioValue] = useState("1");
 
   const handleClick = () => setChecked(!checked);
-  const handleGradientClick = () => setgradientChecked(!gradientChecked);
+  // const handleGradientClick = () => setgradientChecked(!gradientChecked);
 
   // let canvas = document.getElementsByName("QRCode");
 
@@ -151,38 +151,38 @@ const QRCodeComponent = () => {
     }
   };
 
-  const gradientOptions = () => {
-    if (gradientChecked === false) {
-      return (
-        <React.Fragment>
-          <div className="text-container">Foreground Color:</div>
-          <input
-            type="color"
-            value={foregroundColor1}
-            // {...console.log(foregroundColor1)}
-            onChange={(e) => setForegroundColor1(e.target.value)}
-          />
-        </React.Fragment>
-      );
-    } else {
-      return (
-        <React.Fragment>
-          <div className="text-container">Gradient Color 1:</div>
-          <input
-            type="color"
-            value={foregroundColor1}
-            onChange={(e) => setForegroundColor1(e.target.value)}
-          />
-          <div className="text-container">Gradient Color 2:</div>
-          <input
-            type="color"
-            value={foregroundColor2}
-            onChange={(e) => setForegroundColor2(e.target.value)}
-          />
-        </React.Fragment>
-      );
-    }
-  };
+  // const gradientOptions = () => {
+  //   if (gradientChecked === false) {
+  //     return (
+  //       <React.Fragment>
+  //         <div className="text-container">Foreground Color:</div>
+  //         <input
+  //           type="color"
+  //           value={foregroundColor1}
+  //           // {...console.log(foregroundColor1)}
+  //           onChange={(e) => setForegroundColor1(e.target.value)}
+  //         />
+  //       </React.Fragment>
+  //     );
+  //   } else {
+  //     return (
+  //       <React.Fragment>
+  //         <div className="text-container">Gradient Color 1:</div>
+  //         <input
+  //           type="color"
+  //           value={foregroundColor1}
+  //           onChange={(e) => setForegroundColor1(e.target.value)}
+  //         />
+  //         <div className="text-container">Gradient Color 2:</div>
+  //         <input
+  //           type="color"
+  //           value={foregroundColor2}
+  //           onChange={(e) => setForegroundColor2(e.target.value)}
+  //         />
+  //       </React.Fragment>
+  //     );
+  //   }
+  // };
 
   return (
     <div>

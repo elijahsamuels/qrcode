@@ -1,6 +1,6 @@
 import QRCode from "./QRCode";
 // import QRCode2 from "./QRCode2";
-import QRCode2 from "./QRCode2";
+// import QRCode2 from "./QRCode2";
 import "./App.css";
 
 function App() {
