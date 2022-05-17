@@ -7,10 +7,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-
         {QRCode()}
         {/* {QRCode2()} */}
-
       </header>
     </div>
   );

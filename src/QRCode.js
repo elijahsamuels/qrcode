@@ -19,11 +19,11 @@ const QRCodeComponent = () => {
   const [fileName, setFileName] = useState("New QR Code");
   const [size, setSize] = useState(100);
   const [checked, setChecked] = useState(true);
-  // const [gradientChecked, setgradientChecked] = useState(false);
   const [emailAddress, setEmailAddress] = useState("");
   const [emailSubject, setEmailSubject] = useState("");
   const [userStringBody, setUserStringBody] = useState("");
   const [backgroundColor, setBackgroundColor] = useState("#FFFFFF");
+  // const [gradientChecked, setgradientChecked] = useState(false);
   // const [foregroundColor1, setForegroundColor1] = useState("#000000");
   // const [foregroundColor2, setForegroundColor2] = useState("#000000");
 
@@ -31,7 +31,6 @@ const QRCodeComponent = () => {
 
   const handleClick = () => setChecked(!checked);
   // const handleGradientClick = () => setgradientChecked(!gradientChecked);
-
   // let canvas = document.getElementsByName("QRCode");
 
   const handleSaveImg = () => {
